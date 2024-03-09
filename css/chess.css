@@ -1,0 +1,97 @@
+body {
+  font-size: 12px;
+  line-height: 150%;
+}
+.box {
+  margin: 0 auto;
+  width: 460px;
+  position: relative;
+}
+.chess_left {
+  /* float:left; */
+  width: 750px;
+  text-align: center;
+}
+.ch {
+  float: right;
+}
+.chess_right {
+  float: left;
+  display: none;
+}
+.move_info {
+  float: left;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.bill_box {
+  height: 320px;
+  width: 80px;
+  overflow: auto;
+}
+.bill_box li {
+  cursor: pointer;
+  text-align: left;
+}
+.bill_box li:hover {
+  cursor: pointer;
+  background: #c6a577;
+}
+.bill_box li:active {
+  cursor: pointer;
+  background: #fff;
+}
+#billList {
+  margin-top: 20px;
+}
+.bn_box {
+  display: none;
+}
+/* You can remove these code below*/
+:root {
+  --primary: #08aeea;
+  --secondary: #13d2b8;
+  --purple: #bd93f9;
+  --pink: #ff6bcb;
+  --blue: #8be9fd;
+  --gray: #333;
+  --font: "Poppins", sans-serif;
+  --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+  --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+}
+* {
+  box-sizing: border-box;
+}
+input,
+button,
+textarea {
+  border: 0;
+  outline: none;
+}
+/* Main code */
+
+.line-text {
+  text-align: center;
+  position: relative;
+}
+.line-text:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: var(--gray);
+}
+.line-text span {
+  display: inline-block;
+  background-color: rgb(165 123 66);
+  position: relative;
+  font-size: x-large;
+  margin-top: 20px;
+  z-index: 2;
+  padding: 1rem;
+  font-weight: 600;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Cờ tướng</title>
+	<link href="css/chess.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="box" id="box">
+		</br>
+		<div class="chess_left">
+			<audio src="audio/click.wav" id="clickAudio" preload="auto"></audio>
+			<audio src="audio/select.wav" id="selectAudio" preload="auto"></audio>
+			<div style="float: left;
+    background:rgb(165 123 66);
+		margin-top: 200px;
+    width: 23%;
+    height: 300px;
+		border-radius: 10px;
+		border:3px solid black">
+				<div class="line-text"><span>Chế độ</span></div>
+				<div style="margin-top:10px;">
+					<span style=" font-size:x-large;font-weight:600;color:#b50000" id="mode"></span>
+				</div>
+				<div>
+					<div class="line-text"><span>Thời gian</span></div>
+					<div style=" font-size:medium;font-weight:600;color:#b50000"> <span id="m"></span>
+						<span id="s"></span>
+					</div>
+				</div>
+			</div>
+			<canvas class="ch" id="chess">
+			</canvas>
+			<div style="float: right; margin-right: 10%;">
+				<div class="bn_box" id="bnBox">
+					<input type="button" name="offensivePlay" id="easyPlay" value="Dễ" class="btn btn-warning" />
+					<input type="button" name="offensivePlay" id="normalPlay" value="Trung Bình" class="btn btn-warning" />
+					<input type="button" name="offensivePlay" id="hardPlay" value="Khó" class="btn btn-warning" />
+					<input type="button" name="regret" id="regretBn" value="Lùi bước" class="btn btn-warning" />
+					<a href="https://quantrimang.com/huong-dan-choi-co-tuong-cho-nguoi-moi-bat-dau-119899" target="_blank" type="button" class="btn btn-warning">Hướng dẫn</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/play.js"></script>
+	<script type="text/javascript" src="js/AI.js"></script>
+	<script type="text/javascript" src="js/gambit.js"></script>
+	</div>
+</body>
+
+</html>
